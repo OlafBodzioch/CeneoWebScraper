@@ -6,7 +6,7 @@
     <meta name="author" content="Olaf Bodzioch">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Strona główna | CeneoWebScraper</title>
+    <title>Ekstrakcja | CeneoWebScraper</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
@@ -21,10 +21,10 @@
         </nav>
         <div id="main" class="bg-black text-center">
 
-            <form>
-                <p>Proszę wprowadzić id produktu poniżej.</p>
+            <form method="POST" action="">
+                <label>Proszę wprowadzić id produktu poniżej.</label><br>
                 <input type="number"  id="product-id">
-                <button type="button" id="begin" onclick="redirect()">Prześlij zapytanie</button>
+                <button type="submit" id="begin" onclick="redirect()">Prześlij zapytanie</button>
             </form>
 
         </div>
