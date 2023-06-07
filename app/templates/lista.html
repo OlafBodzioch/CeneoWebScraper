@@ -1,36 +1,10 @@
-<!DOCTYPE html>
-<html lang="pl">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Olaf Bodzioch">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title> Lista produktów | CeneoWebScraper</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="script.js"></script>
-</head>
-
-<body class="bg-secondary" onload="create_table()">
-    <div id="content" class="w-75 bg-light m-auto p-5 rounded">
-        <nav class="navbar navbar-default text-center mb-5">
-            <a href="ekstrakcja.html">Ekstrakcja Opinii</a></span>
-            <a href="lista.html">Lista produktów</a>
-            <a href="index.html">Strona główna</a>
-            <a href="autor.html">O autorze</a>
-        </nav>
-
-        <h2 class="text-center pb-5">Lista produktów</h2>
-
-        
+{% extends 'base.html' %}
+{% block title %}Produkty lista{% endblock %}
+{% block content %}     
             <ul class="list-group">
                 <li class="list-group-item list-group-item-success">First item</li>
                 <li class="list-group-item list-group-item-info">Second item</li>
                 <li class="list-group-item list-group-item-warning">Third item</li>
                 <li class="list-group-item list-group-item-danger">Fourth item</li>
             </ul>
-
-        
-
-    </div>
-</body>
-</html>
+{% endblock %}

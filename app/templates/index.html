@@ -1,32 +1,14 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Olaf Bodzioch">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <title>Strona główna | CeneoWebScraper</title>
-</head>
-<body class="bg-secondary">
-<div id="content" class="w-75 bg-light m-auto p-5 rounded">
-    <nav class="navbar navbar-default text-center mb-5">
-           <a href="ekstrakcja.html">Ekstrakcja Opinii</a></span>
-           <a href="lista.html">Lista produktów</a>
-           <a href="index.html">Strona główna</a>
-           <a href="autor.html">O autorze</a>
-    </nav>
-    <div id="main" class="bg-black text-center">
+{% extends 'base.html' %}
+{% block title %}Opis projektu{% endblock %}
+{% block content %}
         
-        <h1 class="text-center">Opis projektu</h1>
-        <p class="w-50 m-auto py-3"></p>
-
-        <h1 class="text-center">Cel aplikacji</h1>
+        <h2 class="text-center">Cel aplikacji</h2>
         <p class="w-50 m-auto py-3">Aplikacja ma na celu pobieranie danych z portalu Ceneo i wyświetalnie ich w przejrzysty sposób na stronie wraz z dodatkowymi wykresami.</p>
 
-        <h1 class="text-center">Opis działania aplikacji</h1>
+        <h2 class="text-center">Opis działania aplikacji</h2>
         <p class="w-50 m-auto py-3">Aplikacja pobiera dane z Ceneo za pomocą biblioteki Requests. Strony produktów wyszukiwane są za pomocą ich ID, a następnie zapisywane w pliku JSON.</p>
 
-        <h1 class="text-center">Zastosowane biblioteki:</h1>
+        <h2 class="text-center">Zastosowane biblioteki:</h2>
         <ul class="w-50 m-auto py-3 list-unstyled">
             
             <li>BeautifulSoup</li>
@@ -39,7 +21,7 @@
 
         </ul>
 
-        <h1 class="text-center">Zastosowane podejścia</h1>
+        <h2 class="text-center">Zastosowane podejścia</h2>
         
         <ul class="w-50 m-auto py-3 list-unstyled">
             
@@ -48,7 +30,4 @@
 
         </ul>
 
-    </div>
-</div>
-</body>
-</html>
+{% endblock %}
