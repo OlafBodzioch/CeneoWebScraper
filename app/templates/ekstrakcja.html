@@ -3,10 +3,10 @@
 {% block content %}
 
 
-            <form method="POST" action="">
+            <form method="POST" action="{{url_for('ekstrakcja')}}">
                 <label>Proszę wprowadzić id produktu poniżej.</label><br>
-                <input type="number"  id="product-id">
-                <button type="submit" id="begin" onclick="redirect()">Prześlij zapytanie</button>
+                <input type="text"  id="product_id" name="product_id" required="required">
+                <button type="submit">Prześlij zapytanie</button>
             </form>
 
 {% endblock %}
